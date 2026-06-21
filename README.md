@@ -79,8 +79,8 @@ pip install pandas numpy matplotlib seaborn scipy linearmodels
 
 1. **Clone repository ini** (jika menggunakan Git):
 ```bash
-git clone <repository-url>
-cd <repository-folder>
+git clone https://github.com/The-Newbie-Guy/SatriaData.git
+cd SatriaData
 ```
 
 2. **Jalankan Data Cleaning** (opsional, jika ingin memproses ulang data):
