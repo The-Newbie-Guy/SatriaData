@@ -2,13 +2,25 @@
 
 Proyek ini bertujuan untuk menganalisis dan memvisualisasikan Indeks Masyarakat Digital Indonesia (IPM Digital) per provinsi selama periode 2022–2025. Data diperoleh dari berbagai sumber terbuka dan diolah menggunakan Python, dengan pendekatan analisis spasial dan statistik.
 
+## 📊 Hasil Analisis
+
+Berikut adalah visualisasi utama yang dihasilkan dari analisis:
+
+### 🗺️ Heatmap Sebaran Indeks per Provinsi
+![Heatmap IPM Digital](heatmap_ipp_indonesia.png)
+
+### 📊 Scatterplot & Boxplot
+![Scatterplot dan Boxplot](eda_literasi_pelayanan_publik.png)
+
+---
+
 ## 📁 Struktur Proyek
 
 ```
 .
-├── Clean Data/                    # Data hasil pembersihan (panel lengkap)
+├── Clean Data/                         # Data hasil pembersihan (panel lengkap)
 │   └── data_panel_lengkap.csv
-├── Raw Data/                      # Data mentah dari berbagai sumber
+├── Raw Data/                           # Data mentah dari berbagai sumber
 │   ├── Data Indeks Masyarakat Digital Indonesia Provinsi 2022.xlsx
 │   ├── Data Indeks Masyarakat Digital Indonesia Provinsi 2023.xlsx
 │   ├── Data Indeks Masyarakat Digital Indonesia Provinsi 2024.xlsx
@@ -16,9 +28,16 @@ Proyek ini bertujuan untuk menganalisis dan memvisualisasikan Indeks Masyarakat 
 │   ├── vertikalkementerian-2-od_20431_indeks_daya_saing_digital__prov_di_indonesia_v6_data.csv
 │   ├── vertikalkementerian-2-od_34152_indeks_pmbngnn_literasi_msyrkt__prov_di_indonesia_v2_data.csv
 │   └── vertikalkementerian-2-od_34154_indeks_pelayanan_publik__prov_di_indonesia_v1_data.csv
-├── Analisis.ipynb                 # Notebook analisis utama
-├── Data Cleaning.ipynb            # Notebook pembersihan data
-└── README.md                      # Dokumentasi proyek
+├── Analisis.ipynb                      # Notebook analisis utama
+├── Data Cleaning.ipynb                 # Notebook pembersihan data
+├── eda_literasi_pelayanan_publik.png   # Gambar Scatterplot & Boxplot
+├── heatmap_ipp_indonesia.png           # Gambar heatmap
+├── create_heatmap.py                   # Skrip pembuatan heatmap
+├── export.py                           # Skrip ekspor hasil
+├── heatmap_ipp_indonesia.png           # Hasil visualisasi heatmap
+├── Laporan_Analisis.md                 # Laporan analisis lengkap
+├── README.md                           # Dokumentasi proyek
+└── requirements.txt                    # Dependensi Python
 ```
 
 ## 📊 Data
@@ -45,38 +64,25 @@ Data mentah disimpan di folder `Raw Data/`, dan hasil pembersihan (panel lengkap
    - Tren temporal dan perbandingan antarprovinsi
    - Analisis korelasi dengan indeks pendukung
 
-3. **Visualisasi Spasial** (`create_heatmap.py`)
-   - Menggunakan shapefile provinsi (`Shp provinsi seluruh indonesia/`)
-   - Membuat heatmap sebaran indeks di seluruh Indonesia
-   - Menghasilkan `heatmap_ipp_indonesia.png`
-
-4. **Ekspor Hasil** (`export.py`)
-   - Menyimpan tabel dan visualisasi ke dalam format yang siap pakai
-
-## 📈 Hasil
-
-- **Heatmap interaktif** (PNG) yang menunjukkan distribusi indeks per provinsi.
-- **Laporan analisis** (`Laporan_Analisis.md`) yang merangkum temuan utama, tren tahunan, dan rekomendasi kebijakan.
-
 ## 📦 Dependensi
 
 Proyek ini menggunakan lingkungan virtual `.venv` dengan paket-paket berikut:
 
 ```txt
-pandas
-numpy
-matplotlib
-seaborn
-geopandas
-shapely
-folium
-plotly
-openpyxl
-xlrd
-pyogrio
-scipy
-statsmodels
-linearmodels
+pandas>=2.0.0
+numpy>=1.24.0
+matplotlib>=3.7.0
+seaborn>=0.12.0
+geopandas>=0.14.0
+shapely>=2.0.0
+folium>=0.15.0
+plotly>=5.14.0
+openpyxl>=3.1.0
+xlrd>=2.0.0
+pyogrio>=0.7.0
+scipy>=1.10.0
+statsmodels>=0.14.0
+linearmodels>=5.0
 ```
 
 Untuk menginstal dependensi secara lengkap, jalankan:
@@ -108,7 +114,3 @@ pip install -r requirements.txt
 ## 📝 Lisensi
 
 Proyek ini bersifat terbuka untuk keperluan akademik dan riset kebijakan publik.
-
----
-
-*Dibuat oleh Tim Analisis Data – 2026*
