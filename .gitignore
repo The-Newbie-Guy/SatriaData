@@ -1,2 +1,7 @@
+.venv/
+.vscode/
 export.py
 Laporan_Analisis.md
+create_heatmap.py
+heatmap_ipp_indonesia.png
+Shp provinsi seluruh indonesia/
