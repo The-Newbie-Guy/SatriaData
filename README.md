@@ -30,13 +30,9 @@ Berikut adalah visualisasi utama yang dihasilkan dari analisis:
 │   └── vertikalkementerian-2-od_34154_indeks_pelayanan_publik__prov_di_indonesia_v1_data.csv
 ├── Analisis.ipynb                      # Notebook analisis utama
 ├── Data Cleaning.ipynb                 # Notebook pembersihan data
+├── README.md                           # Dokumentasi proyek
 ├── eda_literasi_pelayanan_publik.png   # Gambar Scatterplot & Boxplot
 ├── heatmap_ipp_indonesia.png           # Gambar heatmap
-├── create_heatmap.py                   # Skrip pembuatan heatmap
-├── export.py                           # Skrip ekspor hasil
-├── heatmap_ipp_indonesia.png           # Hasil visualisasi heatmap
-├── Laporan_Analisis.md                 # Laporan analisis lengkap
-├── README.md                           # Dokumentasi proyek
 └── requirements.txt                    # Dependensi Python
 ```
 
