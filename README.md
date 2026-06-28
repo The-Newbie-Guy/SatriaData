@@ -16,19 +16,9 @@ Proyek ini bertujuan untuk menganalisis dan memvisualisasikan Indeks Masyarakat 
 │   ├── vertikalkementerian-2-od_20431_indeks_daya_saing_digital__prov_di_indonesia_v6_data.csv
 │   ├── vertikalkementerian-2-od_34152_indeks_pmbngnn_literasi_msyrkt__prov_di_indonesia_v2_data.csv
 │   └── vertikalkementerian-2-od_34154_indeks_pelayanan_publik__prov_di_indonesia_v1_data.csv
-├── Shp provinsi seluruh indonesia/ # Shapefile untuk pemetaan
-│   ├── IdProv.dbf
-│   ├── IdProv.prj
-│   ├── IdProv.shp
-│   └── ...
 ├── Analisis.ipynb                 # Notebook analisis utama
 ├── Data Cleaning.ipynb            # Notebook pembersihan data
-├── create_heatmap.py              # Skrip pembuatan heatmap
-├── export.py                      # Skrip ekspor hasil
-├── heatmap_ipp_indonesia.png      # Hasil visualisasi heatmap
-├── Laporan_Analisis.md            # Laporan analisis lengkap
-├── README.md                      # Dokumentasi proyek
-└── struktur_folder.txt            # Snapshot struktur folder
+└── README.md                      # Dokumentasi proyek
 ```
 
 ## 📊 Data
